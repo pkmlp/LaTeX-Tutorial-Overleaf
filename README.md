@@ -1,2 +1,2 @@
 # LaTeX-Tutorial-Overleaf
-Das LaTeX Tutorial für Overleaf
+Dieses Repository enthält ein vollständiges LaTeX-Tutorial. Erstellt wurde dieses mit Overleaf. 
