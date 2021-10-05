@@ -1,0 +1,35 @@
+In diesem Kapitel wird gezeigt, wie mit mathematischen Formeln \index{Formeln} gearbeitet wird. Das Setzen mathematischer Formeln unterscheidet sich in \LaTeX\ deutlich von der Aufbereitung ”normaler“ Texte. Insbesondere muss beachtet werden, dass:
+
+\begin{quote}
+Leerzeichen und Zeilenwechsel bei der Eingabe keine Bedeutung haben. Alle Abstände in der Formel werden automatisch nach der Logik mathematischer Ausdrücke bestimmt bzw. müssen durch spezielle Befehle festgelegt werden. Jeder einzelne Buchstabe in der Eingabe wird als Name einer Variablen betrachtet und entsprechend gesetzt: kursiv mit zusätzlichem Abstand. Will man innerhalb einer mathematischen Formel normalen Text (d. h. aufrecht mit korrekten Abständen), muss man diesen wie nachfolgend beschrieben codieren.
+\end{quote}
+
+\par\bigskip 
+\par\bigskip 
+Folgendes Beispiel soll dies veranschaulichen:
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Latex-Text},colbacktitle=gray,coltitle=white]
+
+\begin{verbatim}
+Pythagoras \index{Pythagoras} sagt: Seien $a$ und $b$ die 
+Katheten und $c$ die Hypotenuse, dann gilt: $a^2+b^2=c^2$. 
+Somit gilt für die Hypothenuse: $c=\sqrt{a^2+b^2}$.
+\end{verbatim}
+
+\end{tcolorbox}
+
+Im obigen Beispiel sind die mathematischen Teile mit \code{\$} eingefasst (dies entspricht der Inline-Notation von mathematischen Formeln). In den mit \code{\$} eingefassten Textstellen, setzt \LaTeX\ alles in Kursiv-Schrift, wie es in folgender Textbox zu sehen ist: 
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Print-Text},colbacktitle=gray,coltitle=white]
+
+Pythagoras \index{Pythagoras} sagt: Seien $a$ und $b$ die 
+Katheten und $c$ die Hypotenuse, dann gilt: $a^2+b^2=c^2$. 
+Somit gilt für die Hypothenuse: $c=\sqrt{a^2+b^2}$.
+
+\end{tcolorbox}
+
+\textbf{Hinweis:} Mit \code{\textbackslash{index}\{Pythagoras\}} wird der Eintrag im Stichwort- / Namensverzeichnis gesetzt.
+
+\par\bigskip 
+\par\bigskip 
+Auf den folgenden Seiten werden verschiedene Beispiele in obiger Art gezeigt. Ein gute Einführung / Übersicht zeigt auch das Wikibook "LaTeX-Kompendium für Mathematiker", zu finden auf \footnote{\Kompendium}.

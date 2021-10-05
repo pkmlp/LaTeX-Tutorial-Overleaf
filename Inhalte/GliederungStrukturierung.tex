@@ -1,0 +1,17 @@
+
+Wie Eingangs dieses Kapitels erwähnt, ist dieses Template so vorbereitet, dass die Gliederung / Strukturierung des Inhaltes in Kapitel (section), Unterkapitel (subsection) und Unterunterkapitel (subsubsection) im Haupt-Dokument gemacht wird. Aus dem Haupt-Dokument werden dann die Inhalte der einzelnen  Kapitel (section), Unterkapitel (subsection) und Unterunterkapitel (subsubsection) referenziert (siehe \cref{fig:KapitelStruktur}: \nameref{fig:KapitelStruktur} auf Seite \pageref{fig:KapitelStruktur}).
+
+Sollen tiefere Kapitel-Strukturen als Unter-Unter-Kapitel verwendet werden, so ist dies zwar möglich, bedeutet aber einiges an Aufwand, da dies nicht mit den \LaTeX\ Standardmitteln gemacht werden kann. Dies ist ein bewusster Entscheid von Leslie Lamport\footnote{Leslie Lamport auf Wikipedia: \url{https://de.wikipedia.org/wiki/Leslie_Lamport}} - das La in \LaTeX\ steht für Lamport\cite{Lamport2017}. 
+
+\begin{quote}
+    \begin{tcolorbox} 
+        LaTeX’s set of \dq sections\dq{} stops at the level of \code{\textbackslash{subsubsection}}.
+        This reflects a design decision by Lamport — for, after all, 
+        who can reasonably want a section with such huge strings of 
+        numbers in front of it\cite{Tex2017}? 
+    \end{tcolorbox}
+\end{quote}
+
+Somit bleibt für die Gliederung / Strukturierung der referenzierten Dokumente nur noch die Gliederung / Strukturierung in sogenannte Absätze. Es wäre technisch zwar möglich, auch in den aus dem Haupt-Dokument referenzierten Dokumenten Kapitel und Unterkapitel zu definieren. Davon rate ich jedoch dringend ab, da die Übersicht damit garantiert verloren geht und die am Ende resultierende tatsächliche Gliederung / Strukturierung eher ein Zufallsprodukt als wirklich unter Kontrolle ist. 
+
+In den Inhalts-Dokumenten wollen wir also nur fachlichen Inhalt, keine Kapitel Strukturierung. Es können weitere Dateien eingebunden werden. Dabei beschränken wir uns jedoch auf inhaltliche Elemente wie Grafiken und Tabellen.

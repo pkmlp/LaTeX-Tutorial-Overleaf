@@ -1,0 +1,112 @@
+In diesem Kapitel wird gezeigt, wie mit inline Formeln \index{Formeln!inline} gearbeitet wird. Bei Inline Formeln sind die mathmatichen Formeln im Fliesstext eingebettet (siehe auch Beispiel auf der vorhergehenden Seite).
+
+\par\bigskip 
+\par\bigskip 
+\par\bigskip 
+Folgendes Latex-Coding (beachte Abstände und normaler Text in Formel) ...
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Latex-Text},colbacktitle=gray,coltitle=white]
+
+\begin{verbatim}
+$x^{2} \geq 0 \quad \textnormal{für alle} 
+\quad x \in \mathbb{R}$
+\end{verbatim}
+
+\end{tcolorbox}
+
+... wird wie folgt dargestellt: 
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Print-Text},colbacktitle=gray,coltitle=white]
+
+$x^{2} \geq 0 \quad \textnormal{für alle} 
+\quad x \in \mathbb{R}$
+
+\end{tcolorbox}
+
+
+\par\bigskip 
+\par\bigskip 
+\par\bigskip 
+\par\bigskip 
+\par\bigskip 
+Folgendes Latex-Coding (beachte doppelte Abstände und normaler Text in Formel) ...
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Latex-Text},colbacktitle=gray,coltitle=white]
+
+\begin{verbatim}
+$x^{2} \geq 0 \qquad \textnormal{für alle} 
+\qquad x \in \mathbb{R}$
+\end{verbatim}
+
+\end{tcolorbox}
+
+... wird wie folgt dargestellt: 
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Print-Text},colbacktitle=gray,coltitle=white]
+
+$x^{2} \geq 0 \qquad \textnormal{für alle} 
+\qquad x \in \mathbb{R}$
+
+\end{tcolorbox}
+
+
+\pagebreak
+Folgendes Latex-Coding (beachte Formelkennzeichner) ...
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Latex-Text},colbacktitle=gray,coltitle=white]
+
+\begin{verbatim}
+\(
+x^{2} \geq 0 \qquad \textnormal{für alle} 
+\qquad x \in \mathbb{R}
+\)
+\end{verbatim}
+
+\end{tcolorbox}
+
+... wird wie folgt dargestellt: 
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Print-Text},colbacktitle=gray,coltitle=white]
+
+\(
+x^{2} \geq 0 \qquad \textnormal{für alle} 
+\qquad x \in \mathbb{R}
+\)
+
+\end{tcolorbox}
+
+
+\par\bigskip 
+\par\bigskip 
+\par\bigskip 
+Folgendes Latex-Coding (beachte Grössse der Klammern) ...
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Latex-Text},colbacktitle=gray,coltitle=white]
+
+\begin{verbatim}
+$ ((x+1) (x-1))^{2} $
+\par\bigskip %um die Formeln besser abzugrenzen
+$ \bigl( (x+1) (x-1) \bigr) ^{2} $
+\par\bigskip %um die Formeln besser abzugrenzen
+$\Bigl( \bigl( ( \quad x \quad ) \bigr) \Bigr)$
+\par\bigskip %um die Formeln besser abzugrenzen
+$ \Biggl( \biggl( \Bigl( \bigl( ( \quad x \quad ) 
+   \bigr) \Bigr) \biggr) \Biggr) $
+\end{verbatim}
+
+\end{tcolorbox}
+
+... wird wie folgt dargestellt: 
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Print-Text},colbacktitle=gray,coltitle=white]
+
+$ ((x+1) (x-1))^{2} $
+\par\bigskip %um die Formeln besser abzugrenzen
+$ \bigl( (x+1) (x-1) \bigr) ^{2} $
+\par\bigskip %um die Formeln besser abzugrenzen
+$\Bigl( \bigl( ( \quad x \quad ) \bigr) \Bigr)$
+\par\bigskip %um die Formeln besser abzugrenzen
+$ \Biggl( \biggl( \Bigl( \bigl( ( \quad x \quad ) 
+  \bigr) \Bigr) \biggr) \Biggr) $
+
+\end{tcolorbox}

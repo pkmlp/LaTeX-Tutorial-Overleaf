@@ -1,0 +1,191 @@
+In diesem Kapitel wird gezeigt, wie mit abgesetzten Formeln \index{Formeln!abgesetzt} gearbeitet wird. Grössere mathematische Formeln oder Gleichungen setzt man besser in eigene Zeilen. Wenn keine Gleichungsnummer erstellt werden soll, stellt man sie zwischen \code{\textbackslash{begin}\{displaymath\}} und \code{\textbackslash{end}\{displaymath\}} oder zwischen \code{\textbackslash{[}} und \code{\textbackslash{]}}. Soll eine Gleichungsnummer erstellt werden, stellt man sie zwischen \code{\textbackslash{begin}\{equation\}} und \code{\textbackslash{end}\{equation\}}. 
+
+\par\bigskip 
+\textbf{\large Nicht} mehr verwenden sollte man \code{\$\$} ... \code{\$\$} für die Einbettung von abgesetzten Formeln!
+
+Folgende Beispiele soll dies veranschaulichen:
+
+\par\bigskip 
+\par\bigskip 
+Aus ...
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Latex-Text},colbacktitle=gray,coltitle=white]
+
+\begin{verbatim}
+Seien $a$ und $b$ die Katheten und $c$ die
+Hypotenuse, dann gilt: \[ a^2+b^2=c^2 \] Somit
+gilt für die Hypothenuse: \[ c=\sqrt{a^2+b^2} \]
+Lehrsatz des Pythagoras\index{Pythagoras}. 
+\end{verbatim}
+
+\end{tcolorbox}
+
+... wird:
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Print-Text},colbacktitle=gray,coltitle=white]
+
+Seien $a$ und $b$ die Katheten und $c$ die
+Hypotenuse, dann gilt: \[ a^2+b^2=c^2 \] Somit
+gilt für die Hypothenuse: \[ c=\sqrt{a^2+b^2} \]
+Lehrsatz des Pythagoras\index{Pythagoras}. 
+
+\end{tcolorbox}
+
+\textbf{Hinweis:} Mit\code{\textbackslash{index}\{Pythagoras\}} wird der Eintrag im Stichwort- / Namensverzeichnis gesetzt.
+
+
+\pagebreak 
+Sollen die Formeln abgesetzt (in einer eigenen Zeile zentriert freigestellt) werden, so kann man sie auch zwischen \code{\textbackslash{begin}\{displaymath\}} und \code{\textbackslash{end}\{displaymath\}} stellen:
+
+Aus ...
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Latex-Text},colbacktitle=gray,coltitle=white]
+
+\begin{verbatim}
+Seien $a$ und $b$ die Katheten und $c$ die
+Hypotenuse, dann gilt: 
+
+\begin{displaymath}
+  a^2+b^2=c^2 
+\end{displaymath}
+ 
+Somit gilt für die Hypothenuse: 
+
+\begin{displaymath}
+  c=\sqrt{a^2+b^2} 
+\end{displaymath}
+
+Lehrsatz des Pythagoras\index{Pythagoras}. 
+\end{verbatim}
+
+\end{tcolorbox}
+
+... wird:
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Print-Text},colbacktitle=gray,coltitle=white]
+
+Seien $a$ und $b$ die Katheten und $c$ die
+Hypotenuse, dann gilt: 
+
+\begin{displaymath}
+  a^2+b^2=c^2 
+\end{displaymath}
+ 
+Somit gilt für die Hypothenuse: 
+
+\begin{displaymath}
+  c=\sqrt{a^2+b^2} 
+\end{displaymath}
+
+Lehrsatz des Pythagoras\index{Pythagoras}.  
+
+\end{tcolorbox}
+
+\textbf{Hinweis:} Mit\code{\textbackslash{index}\{Pythagoras\}} wird der Eintrag im Stichwort- / Namensverzeichnis gesetzt.
+
+
+\pagebreak 
+Sollen die Formeln nicht nur abgesetzt (in einer eigenen Zeile zentriert freigestellt), sondern auch nummeriert werden, so kann man sie auch zwischen \code{\textbackslash{begin}\{equation\}} und \code{\textbackslash{end}\{equation\}} stellen:
+
+Aus ...
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Latex-Text},colbacktitle=gray,coltitle=white]
+
+\begin{verbatim}
+Seien $a$ und $b$ die Katheten und $c$ die
+Hypotenuse, dann gilt: 
+
+\begin{equation}
+  a^2+b^2=c^2 
+\end{equation}
+ 
+Somit gilt für die Hypothenuse: 
+
+\begin{equation}
+  c=\sqrt{a^2+b^2} 
+\end{equation}
+
+Lehrsatz des Pythagoras \index{Pythagoras}. 
+\end{verbatim}
+
+\end{tcolorbox}
+
+... wird:
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Print-Text},colbacktitle=gray,coltitle=white]
+
+Seien $a$ und $b$ die Katheten und $c$ die
+Hypotenuse, dann gilt: 
+
+\begin{equation}
+  a^2+b^2=c^2 
+\end{equation}
+ 
+Somit gilt für die Hypothenuse: 
+
+\begin{equation}
+  c=\sqrt{a^2+b^2} 
+\end{equation}
+
+Lehrsatz des Pythagoras \index{Pythagoras}. 
+
+\end{tcolorbox}
+
+
+\textbf{Hinweis:} Mit\code{\textbackslash{index}\{Pythagoras\}} wird der Eintrag im Stichwort- / Namensverzeichnis gesetzt.
+
+
+
+\pagebreak 
+Dies ermöglicht die Formeln später im Text zu referenzieren: \index{Formeln!referenziert}
+
+Aus ...
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Latex-Text},colbacktitle=gray,coltitle=white]
+
+\begin{verbatim}
+Seien $a$ und $b$ die Katheten und $c$ die
+Hypotenuse, dann gilt: 
+
+\begin{equation}
+  a^2+b^2=c^2     \label{pythagoras:eins}
+\end{equation}
+ 
+Somit gilt für die Hypothenuse: 
+
+\begin{equation}
+  c=\sqrt{a^2+b^2}     \label{pythagoras:zwei}
+\end{equation}
+
+Lehrsatz des Pythagoras \index{Pythagoras}. Wobei 
+\eqref{pythagoras:zwei} lediglich eine Umformung von 
+\eqref{pythagoras:eins} ist.
+\end{verbatim}
+
+\end{tcolorbox}
+
+... wird:
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Print-Text},colbacktitle=gray,coltitle=white]
+
+Seien $a$ und $b$ die Katheten und $c$ die
+Hypotenuse, dann gilt: 
+
+\begin{equation}
+  a^2+b^2=c^2     \label{pythagoras:eins}
+\end{equation}
+ 
+Somit gilt für die Hypothenuse: 
+
+\begin{equation}
+  c=\sqrt{a^2+b^2}     \label{pythagoras:zwei}
+\end{equation}
+
+Lehrsatz des Pythagoras \index{Pythagoras}. Wobei 
+\eqref{pythagoras:zwei} lediglich eine Umformung von 
+\eqref{pythagoras:eins} ist.
+
+\end{tcolorbox}
+
+
+\textbf{Hinweis:} Mit\code{\textbackslash{index}\{Pythagoras\}} wird der Eintrag im Stichwort- / Namensverzeichnis gesetzt.

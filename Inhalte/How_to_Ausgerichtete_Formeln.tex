@@ -1,0 +1,37 @@
+In diesem Kapitel wird gezeigt, wie Formeln ausgerichtet \index{Formeln!ausgerichtet} werden können. Sollen mehrere Formeln am Gleichheitszeichen ausgerichtet werden, muss das Zeichen \code{\&} am entsprechenden Ort gesetzt werden. 
+
+Aus ...
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Latex-Text},colbacktitle=gray,coltitle=white]
+
+\begin{verbatim}
+Da gibt es zwei Formeln, die jedes Kind kennt: 
+\begin{align}
+  a^2 + b^2 & = c^2     \label{pythagoras:drei}  \\
+  e & = m c^2           \label{einstein:eins}  
+\end{align}
+
+Wobei \eqref{pythagoras:drei} Pythagoras\index{Pythagoras} 
+und \eqref{einstein:eins} Albert Einstein\index{Einstein} 
+zugeschrieben wird.
+\end{verbatim}
+
+\end{tcolorbox}
+
+... wird:
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Print-Text},colbacktitle=gray,coltitle=white]
+
+Da gibt es zwei Formeln, die jedes Kind kennt: 
+\begin{align}
+  a^2 + b^2 & = c^2     \label{pythagoras:drei}  \\  
+  e & = m c^2           \label{einstein:eins}  
+\end{align}
+
+Wobei \eqref{pythagoras:drei} Pythagoras\index{Pythagoras} 
+und \eqref{einstein:eins} Albert Einstein\index{Einstein} 
+zugeschrieben wird.
+
+\end{tcolorbox}
+
+\textbf{Hinweis:} Mit \code{\textbackslash{index}\{Pythagoras\}} und \code{\textbackslash{index}\{Einstein\}} werden die Einträge im Stichwort- / Namensverzeichnis gesetzt.

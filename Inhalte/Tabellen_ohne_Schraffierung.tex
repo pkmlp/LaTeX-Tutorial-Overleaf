@@ -1,0 +1,48 @@
+Tabellen sind in Latex nicht ganz einfach zu verwalten. Die hier gezeigten Beispiele sollten jedoch vielen Anforderungen genügen. Für kompliziertere Tabellen empfehle ich Google und Youtube, wo sehr viele Tutorials zur Verfügung stehen.
+
+Starten wir mit einem einfachen Beispiel:
+
+\input{./Tabellen/Tab_Beispiel_1.tex}
+
+Der für diese Tabelle verwendete Code sieht wie folgt aus:
+
+\begin{figure}[h!]
+    \centering
+      \fbox{\includegraphics[width=0.75\textwidth]{./Bilder/Tabelle_1.png}}  
+      \caption{Eine erste LaTeX-Tabelle}
+\end{figure} 
+
+Die Spalten richten sich nach deren Inhalt aus und sind zentriert (c) ausgerichtet, unabhängig davon, wie die einzelnen Spalten in der \code{*.tex}-Datei formatiert sind. 
+
+In folgender Tabelle wollen wir die Spaltenbreite und die Spaltenausrichtung selber kontrollieren. Das Ergebnis sieht wie folgt aus:   
+
+\input{./Tabellen/Tab_Beispiel_2.tex}
+
+Der dazu benötigte Code:
+
+\begin{figure}[h!]
+    \centering
+      \fbox{\includegraphics[width=0.75\textwidth]{./Bilder/Tabelle_2.png}}  
+      \caption{Eine zweite LaTeX-Tabelle}
+\end{figure} 
+
+Der hier gezeigte Code funktioniert nur, wenn in der Präambel die hier verwendeten Befehle eigenhändig definiert werden.
+
+\begin{figure}[h!]
+    \centering
+      \fbox{\includegraphics[width=0.75\textwidth]{./Bilder/Tabelle_Praeambel.png}}  
+      \caption{LaTeX-Tabellen Präambel}
+\end{figure} 
+
+Hier noch ein Beispiel mit verschiedenen Schriftarten in den Zellen und anderen Linien für die Separierung der Zeilen.
+
+\input{./Tabellen/Tab_Beispiel_3.tex}
+
+\newpage
+Der hierfür benötigte Code:
+
+\begin{figure}[h!]
+    \centering
+      \fbox{\includegraphics[width=0.75\textwidth]{./Bilder/Tabelle_3.png}}  
+      \caption{Eine dritte LaTeX-Tabelle}
+\end{figure} 

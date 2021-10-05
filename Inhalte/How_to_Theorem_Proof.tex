@@ -1,0 +1,116 @@
+In diesem Kapitel wird gezeigt, wie mit Theorem und Proof gearbeitet wird. Dazu müssen in der Präambel des Dokumentes folgende Packages eingebunden werden:
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Latex-Text},colbacktitle=gray,coltitle=white]
+
+\begin{verbatim}
+\usepackage{amsthm}
+\newtheorem{theorem}{Satz}
+\end{verbatim}
+
+\end{tcolorbox}
+
+\par\bigskip 
+\par\bigskip 
+Aus ...
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Latex-Text},colbacktitle=gray,coltitle=white]
+
+\begin{verbatim}
+\begin{theorem}
+Bei einem rechtwinkligen Dreieck mit den Seiten $a$, $b$, 
+and $c$, gilt $a^2+b^2=c^2$. 
+\end{theorem} 
+\end{verbatim}
+
+\end{tcolorbox}
+
+... wird:
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Print-Text},colbacktitle=gray,coltitle=white]
+
+\begin{theorem}
+Bei einem rechtwinkligen Dreieck mit den Seiten $a$, $b$, 
+and $c$, gilt $a^2+b^2=c^2$. 
+\end{theorem} 
+
+\end{tcolorbox}
+
+
+\par\bigskip 
+\par\bigskip 
+\par\bigskip 
+Aus ...
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Latex-Text},colbacktitle=gray,coltitle=white]
+
+\begin{verbatim}
+\begin{theorem}[Der Satz des Pythagoras] 
+Bei einem rechtwinkligen Dreieck mit den Seiten $a$, $b$, 
+and $c$, gilt $a^2+b^2=c^2$.
+\end{theorem}
+\end{verbatim}
+
+\end{tcolorbox}
+
+... wird:
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Print-Text},colbacktitle=gray,coltitle=white]
+
+\begin{theorem}[Der Satz des Pythagoras] 
+Bei einem rechtwinkligen Dreieck mit den Seiten $a$, $b$, 
+and $c$, gilt $a^2+b^2=c^2$.
+\end{theorem}
+
+\end{tcolorbox}
+
+
+
+\pagebreak 
+Aus ...
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Latex-Text},colbacktitle=gray,coltitle=white]
+
+\begin{verbatim}
+\begin{theorem}[Der Satz des Pythagoras] 
+Der Satz des Pythagoras ist einer der fundamentalen 
+Sätze ... (aus Platzgründen gekürzt) ... 
+\[
+      a^{2}+b^{2}=c^{2}
+\]
+Der Satz ist nach Pythagoras von Samos benannt, der 
+als Erster  ... (aus Platzgründen gekürzt) ...
+\end{theorem}
+
+\begin{proof}[\textbf{Beweis des Satzes des Pythagoras}]
+Für den Satz sind mehrere hundert verschiedene 
+Beweise bekannt. Der Satz des Pythagoras ist 
+damit der meistbewiesene mathematische Satz.  
+... (aus Platzgründen gekürzt) ... 
+\end{proof}
+\end{verbatim}
+
+\end{tcolorbox}
+
+... wird:
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray},title={Print-Text},colbacktitle=gray,coltitle=white]
+
+\begin{theorem}[Der Satz des Pythagoras] 
+Der Satz des Pythagoras ist einer der fundamentalen 
+Sätze ... (aus Platzgründen gekürzt) ... 
+\[
+      a^{2}+b^{2}=c^{2}
+\]
+Der Satz ist nach Pythagoras von Samos benannt, der 
+als Erster  ... (aus Platzgründen gekürzt) ...
+\end{theorem}
+
+\begin{proof}[\textbf{Beweis des Satzes des Pythagoras}]
+Für den Satz sind mehrere hundert verschiedene 
+Beweise bekannt. Der Satz des Pythagoras ist 
+damit der meistbewiesene mathematische Satz.  
+... (aus Platzgründen gekürzt) ... 
+\end{proof}
+
+\end{tcolorbox}
+
